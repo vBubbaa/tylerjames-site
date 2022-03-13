@@ -1,15 +1,17 @@
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  <svg-icon :fa-icon="faGithub" :size="50"></svg-icon>
+  <div class="flex flex-col h-full w-full">
+    <Navbar />
+  </div>
 </template>
 
 <script>
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Navbar from "./components/Navbar.vue";
 export default {
+  components: {
+    Navbar,
+  },
   setup() {
-    return {
-      faGithub,
-    };
+    return {};
   },
 };
 </script>
