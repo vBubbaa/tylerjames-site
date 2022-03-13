@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #102542;
+}
+
+* {
+    color: #fff
+}
+
+a:hover {
+    color: #F87060;
+}
+
+.active {
+    color: #F87060;
+}
+ 
+/* for icons, target everything inside to also be #F87060 */
+.active * {
+    color: #F87060;
+}
